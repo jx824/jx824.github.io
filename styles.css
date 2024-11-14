@@ -188,6 +188,11 @@ mySlides-img {
     z-index: 10;
 }
 
+.prev {
+    left:0;
+    border-radius: 3px 0 0 3px;
+}
+
 .next {
     right: 0;
     border-radius: 3px 0 0 3px;
@@ -584,13 +589,13 @@ img {
     justify-content: space-around;
     padding: 20px;
     perspective: 1000px; /* Ensure 3D perspective */
-    grid-template-columns: auto auto auto auto auto auto;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 25px;
 }
 
 .prj-tile {
-    width: 250px; /* Adjust width */
-    height: 300px;
+    width: 100%; /* Adjust width */
+    height: auto;
     margin-bottom: 50px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     overflow: hidden;
@@ -605,6 +610,7 @@ img {
     border: 1px solid #333;
     align-items: center;
     text-transform: uppercase;
+    margin: 0 auto;
 }
 
 .prj-tile:hover {
@@ -629,8 +635,8 @@ img {
 
 .prj-tile img {
     margin-top: 20px;
-    width: 200px;
-    height: 200px;
+    width: 100%;
+    height: auto;
     transition: transform 0.3s ease;
 }
 
@@ -675,3 +681,541 @@ img {
     cursor: pointer;
 }
 
+/* Small devices (phones, 600px and below) */
+@media only screen and (max-width: 600px) {
+    header, footer {
+        padding: 5px 10px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    h3 {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    main {
+        padding: 0px;
+        width: 100%
+    }
+
+    section {
+        margin-bottom: 1rem;
+    }
+
+    .top-menu {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .top-menu ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .top-menu li {
+        margin: 5px 0;
+    }
+
+    .top-menu h1 {
+        font-size: 24px;
+        text-align: center;
+        width: 100%
+    }
+
+    .top-menu a {
+        font-size: 18px;
+    }
+
+    .slideshow-container {
+        width: 100%;
+        height: auto;
+        align-items: center;
+        flex-direction: column;
+        margin: 0px;
+    }
+
+    .mySlides img {
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+    }
+
+    .prev, .next {
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    .about-me__main {
+        min-height: 100px;
+        width: 100%;
+    }
+
+    .about-me__main__content {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .about-me__main__content__pre-title {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .about-me__main__content__title {
+        font-size: 32px;
+        line-height: 36px;
+    }
+
+    .left-column img, .right-column img {
+        width: 75%;
+        height: auto;
+        margin-left: 0;
+    }
+
+    .right-column {
+        padding: 10px;
+    }
+
+    .right-column h2, .left-column h2 {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .container {
+        flex-direction: column; /* Stack columns vertically on smaller screens */
+    }
+
+    .accordion,
+    .about-accordion {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .accordion-header,
+    .about-accordion-header {
+        padding: 8px;
+    }
+
+    .accordion h3,
+    .about-accordion h3 {
+        font-size: 18px;
+    }
+
+    .accordion-content,
+    .about-accordion-content {
+        padding: 10px;
+    }
+
+    #back-to-top {
+        bottom: 10px;
+        right: 10px;
+        width: 100px;
+        height: 40px;
+        font-size: 13px;
+    }
+
+    .intro-container {
+        width: 90%;
+        height: auto;
+        flex-direction: column;
+        margin: 20px auto;
+    }
+
+    .about-me-container {
+        width: 90%;
+        height: auto;
+        flex-direction: column;
+        margin: 20px auto;
+    }
+
+    .accordion-container {
+        width: 90%;
+        height: auto;
+        flex-direction: column;
+        margin: 20px auto;
+    }
+
+    .prj-tiles-container {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 15px;
+    }
+
+    .prj-tile {
+        margin: 10px auto;
+        width: 175px;
+        height: auto;
+    }
+
+    .prj-tile h2 {
+        font-size: 18x;
+    }
+
+    .prj-tile img {
+        width: 150px;
+        height: auto;
+    }
+
+    .modal-content {
+        width: 75%;
+    }
+}
+
+/* Medium devices (tablets, 600px to 768px) */
+@media only screen and (min-width: 601px) and (max-width: 1200px) {
+    header, footer {
+        padding: 10px 20px;
+        width: 100%
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    h3 {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    main {
+        padding: 0px;
+        width: 100%
+    }
+
+    section {
+        margin-bottom: 1.5rem;
+    }
+
+    .top-menu h1 {
+        font-size: 28px;
+    }
+
+    .top-menu a {
+        font-size: 20px;
+    }
+
+    .slideshow-container {
+        width: 100%;
+        height: auto;
+        align-items: center;
+        flex-direction: column;
+        margin: 0px;
+    }
+
+    .mySlides img {
+        width: 500px;
+        height: 400px;
+        margin-left: auto;
+    }
+
+    .prev, .next {
+        font-size: 17px;
+        padding: 14px;
+    }
+
+    .about-me__main {
+        min-height: 100px;
+        width: 100%;
+        padding:20px;
+        background-color: #101010;
+    }
+
+    .about-me__main__content {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .about-me__main__content__pre-title {
+        font-size: 32px;
+        line-height: 30px;
+    }
+
+/*    .about-me__main__content__title {
+        font-size: 38px;
+        line-height: 42px;
+    }*/
+
+    .left-column img, .right-column img {
+        width: 40%;
+        height: auto;
+        margin-left: 0;
+    }
+
+    .left-column, .right-column {
+        padding: 20px;
+        width: 100%;
+        height: auto;
+    }
+
+    .right-column h2, .left-column h2 {
+        font-size: 18px;
+        line-height: 32px;
+    }
+
+    .container {
+        flex-direction: row; /* Arrange columns side by side */
+    }
+
+    .about-left-column, .about-right-column {
+        width: 100%;
+        height: auto;
+        align-items: center;
+    }
+
+    .accordion,
+    .about-accordion {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .accordion-header,
+    .about-accordion-header {
+        padding: 8px;
+    }
+
+    .accordion h3,
+    .about-accordion h3 {
+        font-size: 20px;
+    }
+
+    .accordion-content,
+    .about-accordion-content {
+        padding: 12px;
+    }
+
+    #back-to-top {
+        bottom: 15px;
+        right: 15px;
+        width: 125px;
+        height: 45px;
+        font-size: 18px;
+    }
+
+    .intro-container {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        padding-left: 20px
+    }
+
+    .about-me-container {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        padding-left: 20px
+    }
+
+    .accordion-container {
+        width: 100%;
+        height: auto;
+        padding-left: 20px
+    }
+
+    .prj-tiles-container {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 20px;
+        padding-left: 30px
+    }
+
+    .prj-tile {
+        margin: 20px auto;
+        width: 175px;
+        height: auto;
+    }
+
+    .prj-tile h2 {
+        font-size: 20px;
+    }
+
+    .prj-tile img {
+        width: 150px;
+        height: auto;
+    }
+
+    .modal-content {
+        width: 90%;
+    }
+}
+
+/* Large devices (desktops, 769px and up) */
+@media only screen and (min-width: 1201px) {
+    header, footer {
+        padding: 10px 30px;
+    }
+
+    h1 {
+        font-size: 75px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    main {
+        padding: 0;
+    }
+
+    section {
+        margin-bottom: 2rem;
+    }
+
+    .top-menu h1 {
+        font-size: 30px;
+    }
+
+    .top-menu a {
+        font-size: 22px;
+    }
+
+    .slideshow-container {
+        width: 97%;
+        height: auto;
+    }
+
+    .mySlides img {
+        width: 900px;
+        height: 675px;
+        margin-left: auto;
+    }
+
+    .prev, .next {
+        font-size: 18px;
+        padding: 16px;
+    }
+
+    .about-me__main {
+        min-height: 200px;
+        width: 100%
+    }
+
+    .about-me__main__content {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .about-me__main__content__pre-title {
+        font-size: 40px;
+        line-height: 35px;
+    }
+
+    /*.about-me__main__content__title {
+        font-size: 46px;
+        line-height: 52px;
+    }*/
+
+    .left-column img, .right-column img {
+        width: 500px;
+        height: 500px;
+        margin-left: 50px;
+    }
+
+    .right-column {
+        padding-left: 50px;
+        padding-bottom: 0;
+        padding-top: 20px;
+        padding-right: 50px;
+    }
+
+    .right-column h2, .left-column h2 {
+        font-size: 34px;
+        line-height: 38px;
+    }
+
+    .container {
+        flex-direction: row; /* Arrange columns side by side */
+    }
+
+    .about-left-column, .about-right-column {
+        width: 100%;
+        height: auto;
+        align-items: center;
+    }
+
+    .accordion {
+        width: 97%;
+        height: auto;
+        margin: 20px auto;
+    }
+
+    .about-accordion {
+        width: 90%;
+    }
+
+    .accordion-header,
+    .about-accordion-header {
+        padding: 10px;
+    }
+
+    .accordion h3,
+    .about-accordion h3 {
+        font-size: 25px;
+    }
+
+    .accordion-content,
+    .about-accordion-content {
+        padding: 15px;
+    }
+
+    #back-to-top {
+        bottom: 20px;
+        right: 20px;
+        width: 150px;
+        height: 50px;
+        font-size: 20px;
+    }
+
+    .intro-container {
+        width: 100%;
+        height: 750px;
+    }
+
+    .about-me-container {
+        width: 100%;
+        height: auto;
+    }
+
+    .accordion-container {
+        width: 100%;
+        height: auto;
+    }
+
+    .prj-tiles-container {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 25px;
+    }
+
+    .prj-tile {
+        width: 250px;
+        margin-bottom: 50px;
+    }
+
+    .prj-tile h2 {
+        font-size: 20px;
+    }
+
+    .prj-tile img {
+        margin: 20px auto;
+        width: 215px;
+        height: auto;
+    }
+
+    .modal-content {
+        width: 80%;
+    }
+}
