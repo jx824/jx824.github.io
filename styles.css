@@ -532,6 +532,10 @@ img {
     margin-bottom: 10px;
 }
 
+.about-accordion-header.active .icon {
+    transform: rotate(45deg); /* Rotate icon when active */
+}
+
 .about-accordion-header.active {
     background-color: #101010;
     color: white;
