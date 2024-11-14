@@ -1219,3 +1219,177 @@ img {
         width: 80%;
     }
 }
+
+/* Extra Large devices (desktops, 2000px and up) */
+@media only screen and (min-width: 2001px) {
+    header, footer {
+        padding: 10px 30px;
+    }
+
+    h1 {
+        font-size: 75px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    main {
+        padding: 0;
+        margin: 0;
+    }
+
+    section {
+        margin-bottom: 2rem;
+    }
+
+    .top-menu h1 {
+        font-size: 30px;
+    }
+
+    .top-menu a {
+        font-size: 22px;
+    }
+
+    .slideshow-container {
+        width: 97%;
+        height: auto;
+    }
+
+    .mySlides img {
+        width: 1010px;
+        height: 675px;
+        margin-left: auto;
+    }
+
+    .prev, .next {
+        font-size: 18px;
+        padding: 16px;
+    }
+
+    .about-me__main {
+        min-height: 200px;
+        width: 105%;
+        background-color: #101010;
+    }
+
+    .about-me__main__content {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .about-me__main__content__pre-title {
+        font-size: 40px;
+        line-height: 35px;
+    }
+
+    /*.about-me__main__content__title {
+        font-size: 46px;
+        line-height: 52px;
+    }*/
+
+    .left-column img, .right-column img {
+        width: 650px;
+        height: auto;
+        margin-left: 50px;
+    }
+
+    .right-column {
+        padding-left: 50px;
+        padding-bottom: 0;
+        padding-top: 20px;
+        padding-right: 50px;
+    }
+
+    .right-column h2, .left-column h2 {
+        font-size: 34px;
+        line-height: 38px;
+    }
+
+    .container {
+        flex-direction: row; /* Arrange columns side by side */
+    }
+
+    .about-left-column, .about-right-column {
+        width: 100%;
+        height: auto;
+        align-items: center;
+    }
+
+    .accordion {
+        width: 97%;
+        height: auto;
+        margin: 20px auto;
+    }
+
+    .about-accordion {
+        width: 90%;
+    }
+
+    .accordion-header,
+    .about-accordion-header {
+        padding: 10px;
+    }
+
+    .accordion h3,
+    .about-accordion h3 {
+        font-size: 25px;
+    }
+
+    .accordion-content,
+    .about-accordion-content {
+        padding: 15px;
+    }
+
+    #back-to-top {
+        bottom: 20px;
+        right: 50px;
+        width: 150px;
+        height: 50px;
+        font-size: 20px;
+    }
+
+    .intro-container {
+        width: 104%;
+        height: 750px;
+    }
+
+    .about-me-container {
+        width: 104%;
+        height: auto;
+    }
+
+    .accordion-container {
+        width: 103%;
+        height: auto;
+    }
+
+    .prj-tiles-container {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 25px;
+        width: 102.5%
+    }
+
+    .prj-tile {
+        width: 250px;
+        margin-bottom: 50px;
+    }
+
+    .prj-tile h2 {
+        font-size: 20px;
+    }
+
+    .prj-tile img {
+        margin: 20px auto;
+        width: 215px;
+        height: auto;
+    }
+
+    .modal-content {
+        width: 80%;
+    }
+}
