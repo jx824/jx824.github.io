@@ -45,9 +45,28 @@ document.querySelectorAll('.tile').forEach(tile => {
 });
 
 document.addEventListener('DOMContentLoaded', function() {
-    document.querySelectorAll('.accordion-header, .about-accordion-header').forEach(header => {
-        header.addEventListener('click', function() {
+    const accordionHeaders = document.querySelectorAll('.accordion-header, .about-accordion-header');
 
+    //Open first headers for accordions
+    function openFirstAccordionHeader(headers) {
+        if (headers.length > 0) {
+            headers[0].classList.add('active');
+            const content = headers[0].nextElementSibling;
+            if (content) {
+                content.style.display = "block";
+            }
+        }
+    }
+
+    const accordionHeader = document.querySelectorAll('.accordion-header');
+    openFirstAccordionHeader(accordionHeader);
+
+    const aboutAccordionHeader = document.querySelectorAll('.about-accordion-header');
+    openFirstAccordionHeader(aboutAccordionHeader);
+
+    // Add click event listeners to all accordion headers
+    accordionHeaders.forEach(header => {
+        header.addEventListener('click', function() {
             // Toggle active class for the clicked header
             this.classList.toggle('active');
             const content = this.nextElementSibling;
@@ -56,14 +75,6 @@ document.addEventListener('DOMContentLoaded', function() {
             } else {
                 content.style.display = "block";
             }
-        });
-    });
-});
-
-document.addEventListener('DOMContentLoaded', function() {
-    document.querySelectorAll('.tile, .prj-tile').forEach(tile => {
-        tile.addEventListener('click', function() {
-            this.classList.toggle('flipped');
         });
     });
 });
