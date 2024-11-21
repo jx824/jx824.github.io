@@ -139,6 +139,18 @@ mySlides-img {
     margin-left: 30px;
 }
 
+.hobbies-slides {
+    overflow: hidden;
+    margin-top: 0px;
+    position: relative;
+    margin-left: 0px;
+    display: flex;
+    width: 1840px;
+    height: 500px;
+    align-items: center;
+    justify-content: center;
+}
+
 .fade {
     -webkit-animation-name: fade;
     -webkit-animation-duration: 1.5s;
@@ -676,16 +688,23 @@ img {
     }
 
     .slideshow-container {
-        width: 100%;
+        width: auto;
         height: auto;
         align-items: center;
         flex-direction: column;
         margin: 0px;
     }
 
-    .mySlides img {
+    .hobbies-slides {
         width: 100%;
         height: auto;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .mySlides img {
+        width: 350px;
+        height: 300px;
         margin-left: 0;
     }
 
@@ -847,8 +866,8 @@ img {
     }
 
     .slideshow-container {
-        width: 100%;
-        height: auto;
+        width: 500px;
+        height: 400px;
         align-items: center;
         flex-direction: column;
         margin: 0px;
@@ -858,6 +877,13 @@ img {
         width: 500px;
         height: 400px;
         margin-left: auto;
+    }
+
+    .hobbies-slides {
+        width: 100%;
+        height: auto;
+        align-items: center;
+        flex-direction: column;
     }
 
     .prev, .next {
@@ -1025,11 +1051,18 @@ img {
     }
 
     .slideshow-container {
-        width: 97%;
+        width: 40%;
         height: auto;
         align-items: center;
         flex-direction: column;
         margin: 0px;
+    }
+
+    .hobbies-slides {
+        width: 100%;
+        height: auto;
+        align-items: center;
+        flex-direction: column;
     }
 
     .mySlides img {
@@ -1200,8 +1233,8 @@ img {
     }
 
     .slideshow-container {
-        width: 97%;
-        height: auto;
+        width: 750px;
+        height: 500px;
         align-items: center;
         flex-direction: column;
         margin: 0px;
@@ -1211,6 +1244,13 @@ img {
         width: 750px;
         height: 500px;
         margin-left: auto;
+    }
+
+    .hobbies-slides {
+        width: 100%;
+        height: auto;
+        align-items: center;
+        flex-direction: column;
     }
 
     .prev, .next {
