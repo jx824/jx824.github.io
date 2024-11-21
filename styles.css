@@ -1090,11 +1090,14 @@ img {
     .slideshow-container {
         width: 97%;
         height: auto;
+        align-items: center;
+        flex-direction: column;
+        margin: 0px;
     }
 
     .mySlides img {
-        width: 1000px;
-        height: 675px;
+        width: 750px;
+        height: 500px;
         margin-left: auto;
     }
 
@@ -1262,11 +1265,14 @@ img {
     .slideshow-container {
         width: 97%;
         height: auto;
+        align-items: center;
+        flex-direction: column;
+        margin: 0px;
     }
 
     .mySlides img {
-        width: 1010px;
-        height: 675px;
+        width: 750px;
+        height: 500px;
         margin-left: auto;
     }
 
