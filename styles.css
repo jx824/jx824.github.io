@@ -634,7 +634,6 @@ img {
     cursor: pointer;
 }
 
-/* Small devices (phones, 600px and below) */
 /* Extra Small devices (phones, 390px and below) */
 @media only screen and (max-width: 390px) {
     header, footer {
@@ -836,7 +835,6 @@ img {
     }
 }
 
-
 /* Small devices (phones, 391px to 600px) */
 @media only screen and (min-width: 391px) and (max-width: 600px) {
     header, footer {
@@ -1013,7 +1011,7 @@ img {
 
     .prj-tile {
         margin: 10px auto;
-        width: 175px;
+        width: 150px;
         height: auto;
     }
 
@@ -1022,8 +1020,8 @@ img {
     }
 
     .prj-tile img {
-        width: 150px;
-        height: auto;
+        width: 125px;
+        height: 125px;
     }
 
     .modal-content {
@@ -1194,7 +1192,7 @@ img {
     }
 
     .prj-tiles-container {
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
         gap: 20px;
         padding-left: 30px
     }
@@ -1211,7 +1209,7 @@ img {
 
     .prj-tile img {
         width: 150px;
-        height: auto;
+        height: 150px;
     }
 
     .modal-content {
