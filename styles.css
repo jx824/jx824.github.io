@@ -562,7 +562,6 @@ img {
     background-color: white;
     border: 1px solid #333;
     align-items: center;
-    text-transform: uppercase;
     margin: 0 auto;
 }
 
@@ -1385,6 +1384,7 @@ img {
 
     .prj-tile h2 {
         font-size: 20px;
+        margin: 0 0 10px 0;
     }
 
     .prj-tile img {
@@ -1569,6 +1569,7 @@ img {
 
     .prj-tile h2 {
         font-size: 20px;
+        margin: 0 0 10px 0;
     }
 
     .prj-tile img {
