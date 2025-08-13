@@ -850,6 +850,23 @@ img {
     .modal-content {
         width: 75%;
     }
+
+    .iframe-container {
+      position: relative;
+      width: 100%;
+      max-width: 240px;
+      padding-top: 0;
+      margin: 0 auto;
+      height: 480px;
+    }
+
+    .iframe-container iframe {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
 }
 
 /* Small devices (phones, 391px to 600px) */
@@ -1045,6 +1062,23 @@ img {
     .modal-content {
         width: 75%;
     }
+
+    .iframe-container {
+      position: relative;
+      width: 100%;
+      max-width: 240px;
+      padding-top: 0;
+      margin: 0 auto;
+      height: 480px;
+    }
+
+    .iframe-container iframe {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
 }
 
 /* Medium devices (tablets, 600px to 768px) */
@@ -1234,6 +1268,23 @@ img {
     .modal-content {
         width: 90%;
     }
+
+    .iframe-container {
+      position: relative;
+      width: 100%;
+      max-width: 540px;
+      padding-top: 0;
+      margin: 0 auto;
+      height: 960px;
+    }
+
+    .iframe-container iframe {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
 }
 
 /* Large devices (desktops, 769px and up) */
@@ -1415,6 +1466,23 @@ img {
 
     .modal-content {
         width: 80%;
+    }
+
+    .iframe-container {
+      position: relative;
+      width: 100%;
+      max-width: 540px;
+      padding-top: 0;
+      margin: 0 auto;
+      height: 960px;
+    }
+
+    .iframe-container iframe {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
     }
 }
 
@@ -1600,5 +1668,22 @@ img {
 
     .modal-content {
         width: 80%;
+    }
+
+    .iframe-container {
+      position: relative;
+      width: 100%;
+      max-width: 540px;
+      padding-top: 0;
+      margin: 0 auto;
+      height: 960px;
+    }
+
+    .iframe-container iframe {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
     }
 }
