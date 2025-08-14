@@ -850,10 +850,8 @@ img {
     }
 
     #unity-canvas {
-      width: 1080px;
-      height: 1920px;
-      transform: scale(0.5);
-      transform-origin: top left;
+      width: 390px;
+      height: 694px;
     }
 
     .unity-container {
@@ -862,6 +860,9 @@ img {
       overflow: hidden;
       position: relative;
       margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
 }
 
@@ -1060,10 +1061,8 @@ img {
     }
 
     #unity-canvas {
-      width: 1080px;
-      height: 1920px;
-      transform: scale(0.5);
-      transform-origin: top left;
+      width: 390px;
+      height: 694px;
     }
 
     .unity-container {
@@ -1072,6 +1071,9 @@ img {
       overflow: hidden;
       position: relative;
       margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
 }
 
