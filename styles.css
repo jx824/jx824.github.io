@@ -633,7 +633,7 @@ img {
     cursor: pointer;
 }
 
-    #unity-canvas {
+/*    #unity-canvas {
       width: 1080px;
       height: 1920px;
       transform: scale(0.5);
@@ -646,7 +646,7 @@ img {
       overflow: hidden;
       position: relative;
       margin: 0 auto;
-    }
+    }*/
 
 /* Extra Small devices (phones, 390px and below) */
 @media only screen and (max-width: 390px) {
