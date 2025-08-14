@@ -376,11 +376,11 @@
             <canvas id="unity-canvas"></canvas>
         </div>
 
-        <script src="Game/Build/TileMatchGame.loader"></script>
+        <script src="Game/Build/TileMatchGame.loader.js"></script>
         <script>
               createUnityInstance(document.querySelector("#unity-canvas"), {
               dataUrl: "Game/Build/TileMatchGame.data",
-              frameworkUrl: "Game/Build/TileMatchGame.framework",
+              frameworkUrl: "Game/Build/TileMatchGame.framework.js",
               codeUrl: "Game/Build/TileMatchGame.wasm",
               productVersion: "1.0",
             });
