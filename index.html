@@ -371,13 +371,21 @@
     <section id="tile-matching-game" style="padding: 40px 20px; text-align: center;">
         <h2>Play My Tile Matching Game</h2>
         <p>Built in Unity as part of my learnings.</p>
-        <div class="iframe-container" style="max-width: 540px; margin: 0 auto;">
-            <iframe
-                    src="https://jx824.github.io/Game/index.html"
-                    style="border:none; width: 100%; height: 960px;"
-                    title="Tile Matching Game"
-            ></iframe>
+
+        <div class="unity-container">
+            <canvas id="unity-canvas"></canvas>
         </div>
+
+        <script src="tilematch/Game/Build/MyGame.loader.js"></script>
+        <script>
+            createUnityInstance(document.querySelector("#unity-canvas"), {
+              dataUrl: "tilematch/Game/Build/MyGame.data",
+              frameworkUrl: "tilematch/Game/Build/MyGame.framework.js",
+              codeUrl: "tilematch/Game/Build/MyGame.wasm",
+              streamingAssetsUrl: "tilematch/Game/StreamingAssets",
+              productVersion: "1.0",
+            });
+        </script>
     </section>
     <section id="prof-ex">
         <div class="about-me">
