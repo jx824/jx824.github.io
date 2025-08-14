@@ -850,15 +850,14 @@ img {
     }
 
     #unity-canvas {
-      width: 1080px;
-      height: 1920px;
-      transform: scale(0.5);
-      transform-origin: top left;
+      width: 100%;
+      height: auto;
     }
 
     .unity-container {
-      width: 540px;
-      height: 960px;
+      width: 100%;
+      max-width: 480px;
+      height: auto;
       overflow: hidden;
       position: relative;
       margin: 0 auto;
@@ -1060,15 +1059,13 @@ img {
     }
 
     #unity-canvas {
-      width: 1080px;
-      height: 1920px;
-      transform: scale(0.5);
-      transform-origin: top left;
+      width: 100%;
+      height: auto;
     }
 
     .unity-container {
-      width: 540px;
-      height: 960px;
+      width: 100%;
+      max-width: 480px;
       overflow: hidden;
       position: relative;
       margin: 0 auto;
