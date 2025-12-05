@@ -117,7 +117,7 @@ section {
 }
 
 /* Slideshow Styles */
-.slideshow-container {
+/*.slideshow-container {
     overflow: hidden;
     margin-top: 0px;
     position: relative;
@@ -137,9 +137,9 @@ mySlides-img {
     image-rendering: -webkit-optimize-contrast;
     image-rendering: crisp-edges;
     margin-left: 30px;
-}
+}*/
 
-.hobbies-slides {
+/*.hobbies-slides {
     overflow: hidden;
     margin-top: 0px;
     position: relative;
@@ -149,7 +149,7 @@ mySlides-img {
     height: 500px;
     align-items: center;
     justify-content: center;
-}
+}*/
 
 .fade {
     -webkit-animation-name: fade;
@@ -1677,3 +1677,4 @@ img {
       margin: 0 auto;
     }
 }
+
