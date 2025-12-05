@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-let slideIndex = 0;
+/*let slideIndex = 0;
 showSlides(slideIndex);
 
 function plusSlides(n) {
@@ -33,7 +33,7 @@ function autoSlides() {
     setTimeout(autoSlides, 10000); // Change image every 10 seconds
 }
 autoSlides();
-
+*/
 
 document.querySelectorAll('.tile').forEach(tile => {
     tile.addEventListener('mouseover', () => {
@@ -131,3 +131,4 @@ window.onclick = function(event) {
         }
     }
 }
+
